@@ -29,7 +29,7 @@ module.exports = {
                     if (req.file == undefined) {
                         console.log("bosh files")
                     } else {
-                        let img = "https://oquvmarkazi.herokuapp.com/" + `images/${req.file.filename}`
+                        let img = "https://m-shop-001.herokuapp.com/" + `images/${req.file.filename}`
                         res.send(img)
                     }
                 }
