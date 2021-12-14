@@ -35,7 +35,7 @@ module.exports = {
             if(!rows) {
                 res.send("user not faund")
             }else {
-                res.send(jwt.signUser(rows, key.SECRET_KEY))
+                res.send([jwt.signUser(rows, key.SECRET_KEY), rows.role_user])
             }
         }catch (e) {
             console.log(e)
